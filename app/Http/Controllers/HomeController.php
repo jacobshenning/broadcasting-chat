@@ -34,6 +34,6 @@ class HomeController extends Controller
      */
     public function message(Request $request)
     {
-        return event(new NewMessage($request->message));;
+        return event(new NewMessage($request->message));
     }
 }
